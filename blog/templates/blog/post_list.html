@@ -11,7 +11,9 @@
         <header>
             <h1><a href="/">Nmart71's Blog</a></h1>
         </header>
-
+    <main class="container">
+        <div class="row">
+            <div class="col">
         {% for post in posts %}
         <article>
             <time>published: {{ post.published_date }}</time>
@@ -19,4 +21,9 @@
             <p>{{ post.text|linebreaksbr }}</p>
         </article>
         {% endfor %}
+            </div>
+        </div>
+    </main>
+
+
 </html>
